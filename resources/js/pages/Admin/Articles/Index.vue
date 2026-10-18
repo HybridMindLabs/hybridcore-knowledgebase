@@ -9,7 +9,7 @@ import Badge from '@/components/UI/Badge.vue';
 import { useLocale } from '@/composables/useLocale';
 import {
     BookOpen, Plus, Search, Edit, Trash2, Pin, Star,
-    ExternalLink, Eye, ThumbsUp, Layers, MessageSquare, Settings,
+    Eye, ThumbsUp, Layers, MessageSquare, Settings, RotateCcw,
 } from '@lucide/vue';
 
 interface Category {
@@ -162,7 +162,7 @@ function deleteArticle(article: Article) {
                     </select>
                 </div>
 
-                <div>
+                <div class="flex items-center gap-2">
                     <select
                         v-model="status"
                         @change="applyFilters"
@@ -173,6 +173,15 @@ function deleteArticle(article: Article) {
                         <option value="draft">Draft</option>
                         <option value="archived">Archived</option>
                     </select>
+                    <button
+                        v-if="search || categoryId || status"
+                        @click="resetFilters"
+                        type="button"
+                        class="p-2 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800 rounded-xl transition shrink-0"
+                        title="Reset Filters"
+                    >
+                        <RotateCcw :size="15" />
+                    </button>
                 </div>
             </div>
         </div>

@@ -4,7 +4,6 @@ import { computed, ref } from 'vue';
 import PublicLayout from '@/layouts/PublicLayout.vue';
 import Breadcrumb from '@/components/UI/Breadcrumb.vue';
 import Pagination from '@/components/UI/Pagination.vue';
-import EmptyState from '@/components/UI/EmptyState.vue';
 import { useTheme } from '@/composables/useTheme';
 import { useLocale } from '@/composables/useLocale';
 import {

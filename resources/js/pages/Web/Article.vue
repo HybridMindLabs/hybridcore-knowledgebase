@@ -9,8 +9,7 @@ import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import {
     BookOpen, Server, Calendar, Clock, Eye, ThumbsUp, ThumbsDown,
-    Share2, Check, ArrowLeft, ArrowRight, FileText, ChevronRight,
-    CornerDownRight, AlertCircle, Copy,
+    Share2, Check, ArrowLeft, ArrowRight,
 } from '@lucide/vue';
 
 interface Category {
@@ -225,7 +224,7 @@ const schemaJson = computed(() => {
             <meta property="og:description" :content="article.excerpt || article.title" />
             <meta property="og:type" content="article" />
             <!-- Structured Data JSON-LD for SEO -->
-            <component is="script" type="application/ld+json" v-html="schemaJson" />
+            <component :is="'script'" type="application/ld+json" v-html="schemaJson" />
         </Head>
 
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">

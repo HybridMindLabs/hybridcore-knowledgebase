@@ -3,12 +3,11 @@ import { Head, Link } from '@inertiajs/vue3';
 import { computed, ref, watch } from 'vue';
 import PublicLayout from '@/layouts/PublicLayout.vue';
 import Breadcrumb from '@/components/UI/Breadcrumb.vue';
-import Card from '@/components/UI/Card.vue';
 import { useTheme } from '@/composables/useTheme';
 import { useLocale } from '@/composables/useLocale';
 import {
     Search, BookOpen, Server, ShieldAlert, Wrench, HelpCircle,
-    ChevronRight, Eye, Star, Pin, FileText, ArrowRight, X, Clock,
+    ChevronRight, Eye, Star, Pin, FileText, ArrowRight, X,
 } from '@lucide/vue';
 
 interface Category {
@@ -37,7 +36,7 @@ interface Article {
     };
 }
 
-const props = defineProps<{
+defineProps<{
     categories: Category[];
     featuredArticles: Article[];
     popularArticles: Article[];

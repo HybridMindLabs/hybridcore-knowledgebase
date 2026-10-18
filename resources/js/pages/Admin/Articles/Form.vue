@@ -9,8 +9,7 @@ import { useLocale } from '@/composables/useLocale';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import {
-    BookOpen, ArrowLeft, Save, Eye, Edit3, Server,
-    Pin, Star, Sparkles, HelpCircle,
+    BookOpen, ArrowLeft, Save, Eye, Edit3,
 } from '@lucide/vue';
 
 interface Category {

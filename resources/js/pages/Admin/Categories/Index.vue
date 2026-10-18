@@ -9,7 +9,7 @@ import FormModal from './FormModal.vue';
 import { useLocale } from '@/composables/useLocale';
 import {
     BookOpen, Plus, Edit, Trash2, Layers, Server, ShieldAlert,
-    Wrench, HelpCircle, FileText, ArrowUp, ArrowDown,
+    Wrench, HelpCircle, FileText,
     MessageSquare, Settings,
 } from '@lucide/vue';
 
@@ -25,7 +25,7 @@ interface Category {
     articles_count: number;
 }
 
-const props = defineProps<{
+defineProps<{
     categories: Category[];
 }>();
 

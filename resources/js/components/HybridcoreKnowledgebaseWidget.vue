@@ -15,7 +15,7 @@ interface ArticleItem {
     views_count: number;
 }
 
-const props = defineProps<{
+defineProps<{
     articles: ArticleItem[];
 }>();
 

@@ -3,12 +3,11 @@ import { Head, Link, router } from '@inertiajs/vue3';
 import AdminLayout from '@/layouts/AdminLayout.vue';
 import PageHeader from '@/components/UI/PageHeader.vue';
 import Pagination from '@/components/UI/Pagination.vue';
-import Button from '@/components/UI/Button.vue';
 import Badge from '@/components/UI/Badge.vue';
 import { useLocale } from '@/composables/useLocale';
 import {
     BookOpen, Layers, MessageSquare, Settings, ThumbsUp, ThumbsDown,
-    Trash2, SearchX, Clock, User, Check, AlertCircle,
+    Trash2, SearchX, Clock, User,
 } from '@lucide/vue';
 
 interface FeedbackItem {
@@ -47,7 +46,7 @@ interface Paginated<T> {
     total: number;
 }
 
-const props = defineProps<{
+defineProps<{
     feedback: Paginated<FeedbackItem>;
     searchMisses: Paginated<SearchMiss>;
     filters: { helpful: string };
