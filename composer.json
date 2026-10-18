@@ -1,0 +1,34 @@
+{
+    "name": "hybridcore/knowledgebase",
+    "description": "Official Knowledgebase & Documentation extension for HybridCore — categorized guides, server tutorials, player report templates, live search, and feedback.",
+    "type": "hybridcore-extension",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "HybridCore"
+        }
+    ],
+    "keywords": [
+        "hybridcore",
+        "hybridcore-extension",
+        "knowledgebase",
+        "docs",
+        "guides",
+        "tutorials",
+        "support"
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hybridcore\\Knowledgebase\\": "src/",
+            "Hybridcore\\Knowledgebase\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "extra": {
+        "hybridcore": {
+            "id": "hybridcore/knowledgebase"
+        }
+    }
+}

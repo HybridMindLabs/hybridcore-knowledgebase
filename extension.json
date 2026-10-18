@@ -1,0 +1,23 @@
+{
+  "id": "hybridcore/knowledgebase",
+  "name": "Knowledgebase",
+  "version": "1.0.0",
+  "description": "Comprehensive knowledge base and game server documentation extension with categories, live search, player/admin report guides, server attachments, and helpfulness metrics.",
+  "author": "HybridCore",
+  "type": "official",
+  "provider": "Hybridcore\\Knowledgebase\\KnowledgebaseServiceProvider",
+  "routes": {
+    "web": "routes/web.php",
+    "admin": "routes/admin.php",
+    "api": "routes/api.php"
+  },
+  "migrations": "database/migrations",
+  "seeder": "Hybridcore\\Knowledgebase\\Database\\Seeders\\KnowledgebaseSeeder",
+  "config": "config/knowledgebase.php",
+  "lang": "resources/lang",
+  "lang_namespace": "knowledgebase",
+  "requires": {
+    "core": ">=0.3.0",
+    "php": ">=8.2"
+  }
+}
