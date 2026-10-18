@@ -2,7 +2,7 @@
     "name": "hybridmindlabs/hybridcore-knowledgebase",
     "description": "Official Knowledgebase & Documentation extension for HybridCore — categorized guides, server tutorials, player report templates, live search, and feedback.",
     "type": "hybridcore-extension",
-    "license": "proprietary",
+    "license": "PolyForm-Noncommercial-1.0.0",
     "homepage": "https://github.com/HybridMindLabs/hybridcore-knowledgebase",
     "authors": [
         {
