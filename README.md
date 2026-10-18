@@ -1,15 +1,25 @@
-# HybridCore Knowledgebase Extension
+# HybridCore Knowledgebase
 
-Comprehensive, high-performance Knowledgebase & Documentation extension for HybridCore.
+[![HybridCore](https://img.shields.io/badge/HybridCore-%E2%89%A5%200.3.0-6366f1)](https://github.com/HybridMindLabs/HybridCore)
+[![Version](https://img.shields.io/badge/version-1.0.0-22c55e)](CHANGELOG.md)
+[![License](https://img.shields.io/badge/license-Proprietary-64748b)](LICENSE)
 
-## Features
+The official **Knowledgebase & Documentation** extension for [HybridCore](https://github.com/HybridMindLabs/HybridCore) — categorized guides, server tutorials, player report templates, live search, and helpfulness metrics.
 
-- **Categorized Articles**: Hierarchical categories with custom Lucide icons, badges, and sorting.
-- **Game Server Guides**: Link articles directly to specific game servers or global categories.
-- **Report & Appeal Templates**: Built-in guides for reporting players, cheaters, and admin abuse.
-- **Fast Live Search**: Real-time debounced search + integration with HybridCore global search (`Ctrl+K`).
-- **SEO & Social Sharing**: Complete OpenGraph, Twitter Cards, and JSON-LD structured data.
-- **Helpfulness Feedback**: Upvote / downvote articles with optional comments to track article quality.
-- **Search Misses Analytics**: Track what users search for that doesn't yield results to fill documentation gaps.
-- **WCAG 2.1 AA Compliant**: Accessible markup, high-contrast states, full dark/light theme support.
-- **Modular Admin Panel**: Full CRUD for categories and articles, feedback insights, and settings.
+- 📚 **Structured Categories**: Organize articles into topics with custom Lucide icons and colors.
+- 🎮 **Game Server Guides**: Associate guides directly with specific game servers.
+- 🛡️ **Report & Appeal Templates**: Built-in instructions for reporting player rule breaks, cheaters, and admin abuse.
+- ⚡ **Live Search**: Instant debounced search and site-wide `Ctrl+K` integration.
+- 📖 **Table of Contents**: Automatic extraction of heading anchors with smooth navigation.
+- 👍 **Helpfulness Feedback**: Upvote/downvote guides with optional user feedback comments.
+- 🔍 **Search Misses Analytics**: Track queries with zero results to identify content gaps.
+- ♿ **WCAG 2.1 AA Compliant**: High contrast, keyboard navigable, full dark/light theme support.
+
+## Requirements
+
+- HybridCore ≥ 0.3.0
+- PHP ≥ 8.2
+
+## License
+
+Proprietary — see [LICENSE](LICENSE).

@@ -1,13 +1,19 @@
 {
-    "name": "hybridcore/knowledgebase",
+    "name": "hybridmindlabs/hybridcore-knowledgebase",
     "description": "Official Knowledgebase & Documentation extension for HybridCore — categorized guides, server tutorials, player report templates, live search, and feedback.",
     "type": "hybridcore-extension",
     "license": "proprietary",
+    "homepage": "https://github.com/HybridMindLabs/hybridcore-knowledgebase",
     "authors": [
         {
-            "name": "HybridCore"
+            "name": "HybridMind Labs",
+            "homepage": "https://github.com/HybridMindLabs"
         }
     ],
+    "support": {
+        "issues": "https://github.com/HybridMindLabs/hybridcore-knowledgebase/issues",
+        "source": "https://github.com/HybridMindLabs/hybridcore-knowledgebase"
+    },
     "keywords": [
         "hybridcore",
         "hybridcore-extension",
@@ -25,6 +31,9 @@
             "Hybridcore\\Knowledgebase\\": "src/",
             "Hybridcore\\Knowledgebase\\Database\\Seeders\\": "database/seeders/"
         }
+    },
+    "config": {
+        "sort-packages": true
     },
     "extra": {
         "hybridcore": {

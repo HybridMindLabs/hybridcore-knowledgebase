@@ -3,7 +3,7 @@
   "name": "Knowledgebase",
   "version": "1.0.0",
   "description": "Comprehensive knowledge base and game server documentation extension with categories, live search, player/admin report guides, server attachments, and helpfulness metrics.",
-  "author": "HybridCore",
+  "author": "HybridMind Labs",
   "type": "official",
   "provider": "Hybridcore\\Knowledgebase\\KnowledgebaseServiceProvider",
   "routes": {
@@ -16,6 +16,7 @@
   "config": "config/knowledgebase.php",
   "lang": "resources/lang",
   "lang_namespace": "knowledgebase",
+  "update_url": "https://api.github.com/repos/HybridMindLabs/hybridcore-knowledgebase/releases/latest",
   "requires": {
     "core": ">=0.3.0",
     "php": ">=8.2"
